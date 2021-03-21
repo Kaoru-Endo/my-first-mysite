@@ -25,7 +25,7 @@ SECRET_KEY = '*vf%kic@16j8=zf(t9+4au0nw$6-8u%e8vfz3@#r3itvyugmc3'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['192.168.0.12', '127.0.0.1', 'localhost']
+ALLOWED_HOSTS = ['192.168.0.12', '127.0.0.1', 'localhost', '.pythonanyware.com']
 
 
 # Application definition
@@ -123,3 +123,5 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static'),
 ]
+
+STATIC_ROOT = ps.path.join(BASE_DIR, 'static')
